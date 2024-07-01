@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'BlenderProMedium', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #848484;
+    overflow-x: hidden;
+}
+
+body h1,
+body h2,
+body h3,
+body h4 {
+    line-height: 1;
+    font-family: 'BlenderProBold', sans-serif;
+}
+
+.container {
+    max-width: 1536px;
+    margin: 0 auto;
+}
+
+body {
+    background: url(../img/bg-principal.jpg);
+    background-size: cover;
+    position: relative;
+    padding: 0 0 0px;
+    background-repeat: repeat;
+    height: 200vh;
+}
+
+.destaque {
+    max-width: 783px;
+    border-left: solid 1px #ff3500;
+    border-right: solid 1px #ff3500;
+    margin-inline: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    backdrop-filter:blur(15px)
+}
+
+@media screen and (max-width:960px) {
+    .destaque {
+        background: rgba(255, 114, 0, .2);
+        backdrop-filter: blur(8px);
+    }
+}
+
+
+.destaque::after {
+    content: "";
+    width: 100%;
+    height: 15px;
+    background: url(../img/cont1-top.png) center bottom no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+.destaque::before {
+    content: "";
+    width: 100%;
+    height: 14px;
+    background: url(../img/cont1-bottom.png) center top no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+}
+
