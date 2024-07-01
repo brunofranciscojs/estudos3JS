@@ -28,7 +28,7 @@ function cena() {
     document.querySelector('.foto').appendChild(renderer.domElement);
 
     FBXloader = new THREE.FBXLoader();
-    FBXloader.load('img/cadeira.fbx', (fbx) => {
+    FBXloader.load('model/cadeira.fbx', (fbx) => {
         scene.add(fbx)
         fbx.scale.set(.075, .075, .075)
         fbx.position.y = -50
