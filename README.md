@@ -49,12 +49,14 @@ Instale as Dependências:
 
 ```bash
 npm install
-Inicie o Servidor de Desenvolvimento:
 ```
+Inicie o Servidor de Desenvolvimento:
+
+
 ```bash
 npm start
-O projeto estará disponível em http://localhost:8080.
 ```
+O projeto estará disponível em http://localhost:8080.
 
 ### Fontes e Referências
  - THREE.JS Documentation
